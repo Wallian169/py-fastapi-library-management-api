@@ -8,7 +8,7 @@ engine = create_engine(
     SQL_ALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}
 )
 
-session_maker = sessionmaker(
+SessionLocal = sessionmaker(
     bind=engine,
     autoflush=False,
     autocommit=False,
