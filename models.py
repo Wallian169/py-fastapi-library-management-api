@@ -23,5 +23,5 @@ class Book(BaseClass):
     summary = Column(String(1000), nullable=False)
     publication_date = Column(Date(), nullable=False)
     author_id = Column(
-        ForeignKey("author.id"),
+        ForeignKey("authors.id"),
     )
