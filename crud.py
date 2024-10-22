@@ -19,7 +19,7 @@ def get_all_books(db: Session, skip: int = 0, limit: int = 5, author_id: int = N
     return queryset
 
 
-def get_autor_from_db(db: Session, author_id: int):
+def get_author_from_db(db: Session, author_id: int):
     return db.query(models.Author).filter(models.Author.id == author_id).first()
 
 
